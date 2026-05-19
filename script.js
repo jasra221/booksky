@@ -1,23 +1,24 @@
-// Create floating parrots in background
+// Create floating parrots in background with enhanced animations
 function createFloatingParrots() {
     const parrotContainer = document.querySelector('.floating-parrots');
-    const parrotEmojis = ['🦜', '🦜', '🦜', '🦜', '🦜', '🦜', '🦜', '🦜', '🦜', '🦜'];
+    const parrotEmojis = ['🦜', '🍃', '🦜', '🌿', '🦜', '🍃', '🦜', '🌿', '🦜', '🍃'];
     
     parrotEmojis.forEach((emoji, index) => {
         const parrot = document.createElement('div');
         parrot.className = 'floating-parrot';
         parrot.textContent = emoji;
         
-        // Random position
+        // Random position with better distribution
         const randomX = Math.random() * 100;
         const randomY = Math.random() * 100;
-        const randomDuration = 15 + Math.random() * 25;
-        const randomDelay = Math.random() * 5;
+        const randomDuration = 18 + Math.random() * 30;
+        const randomDelay = Math.random() * 8;
         
         parrot.style.left = randomX + '%';
         parrot.style.top = randomY + '%';
         parrot.style.animationDuration = randomDuration + 's';
         parrot.style.animationDelay = randomDelay + 's';
+        parrot.style.fontSize = (1.5 + Math.random() * 1) + 'rem';
         
         parrotContainer.appendChild(parrot);
     });
@@ -153,38 +154,54 @@ function getChatbotReply(input) {
     const text = input.trim().toLowerCase();
 
     if (!text) {
-        return 'Oru correct question kudunga, naanga help pannuvom.';
+        return 'Entha question aavaalum solli kudisae! Naanga Pattu Kadai team-la irukkum. 🦜';
     }
 
-    if (/hi|hello|hai|helo|salam|vanakkam|bonjour|namaste/.test(text)) {
-        return 'Hi! Vanakkam! Ungaluku enna help venum? Price, location, cage, food, health plan, sollunga.';
+    if (/hi|hello|hai|helo|salam|vanakkam|bonjour|namaste|hey|welcome/.test(text)) {
+        return 'Vanakkam! 🍃 Pattu Kadai-la welcome! Indian Ringneck parrots-ai nanga specialty. Enna help venum? Cage, food, care, wellness plan?';
     }
 
-    if (/price|cost|rate|how much|vala/.test(text)) {
-        return 'Price species mela depend pannum. Basic parrot cage 1,999 rupees la irukum. Food packs and accessories separate charge.';
+    if (/ringneck|parakeet|budgie|budgerigar|indian parrot/.test(text)) {
+        return '🦜 Indian Ringneck parrots nalla intelligent, friendly, loyal birds! Green color, personality irukku. Long lifespan 20-30 years. Perfect choice! 🍃';
     }
 
-    if (/location|where|shop|address|vayathu/.test(text)) {
-        return 'Namma shop Chennai-la iruku. Inimey exact address venumna WhatsApp la contact pannunga.';
+    if (/price|cost|rate|how much|vala|value/.test(text)) {
+        return 'Indian Ringneck-ku eco-friendly cage ₹2,500 - ₹8,000. Organic food pack ₹500/month. Wellness subscription ₹1,500/month. Details-ku WhatsApp pannunga!';
     }
 
-    if (/kind|type|species|which parrot|parrot type|varieties/.test(text)) {
-        return 'Macaw, African Grey, Cockatoo, Amazon, Parakeet, Conure, Lovebird, Eclectus-vachu irukku. Eppo connect aagi detail sollunga.';
+    if (/location|where|shop|address|vayathu|kanne/.test(text)) {
+        return 'Namma Pattu Kadai Chennai-la vela irukku - greenery garden-a! Exact address, directions WhatsApp-la solren. Contact: 979-1244-634 🌿';
+    }
+
+    if (/greenery|organic|eco|environment|sustainable/.test(text)) {
+        return 'Sari! 🌿 Nanga 100% eco-friendly, organic products use pannurom. Sustainable practices follow pannurom. Parrots-um nature-um safe! 🍃';
+    }
+
+    if (/care|health|wellness|fitness|exercise/.test(text)) {
+        return 'Ringneck-ku daily 2-3 hours attention venum. Fresh veggies, pellets, exercise venum. Monthly health checkup very important! 🏥 Nanga available.';
     }
 
     if (/subscription|health|vet|checkup|monthly/.test(text)) {
-        return 'Monthly health checkups available. Vet monthly visit, diet review, nail/beak care and emergency support.';
+        return 'Monthly Wellness & Care Subscription available! Vet visit, diet review, nail/beak care, grooming, emergency support - all included! 🌿 ₹1,500/month';
     }
 
-    if (/food|diet|nutrition/.test(text)) {
-        return 'Parrots-ku good diet romba mukkiyam. Pellets, fresh veggies, fruits, nuts. Avoid avocado, chocolate, caffeine.';
+    if (/food|diet|nutrition|vegetables|fruits/.test(text)) {
+        return 'Ringneck-ku: Organic pellets, fresh greens (spinach, kale), fruits (apple, mango), nuts, seeds. Avoid: avocado, chocolate, salt, caffeine. Water daily! 💧';
     }
 
-    if (/contact|whatsapp|phone|call|book/.test(text)) {
-        return 'Sari! WhatsApp panni contact pannunga. https://wa.me/919791244634';
+    if (/cage|home|housing|setup/.test(text)) {
+        return 'Indian Ringneck-ku spacious cage venum - 2-3 feet long minimum. Eco-friendly material, natural perches, toys, water bowl venum. 🏠🍃';
     }
 
-    return 'Konjam confuse-a irukku. WhatsApp la contact panunga: https://wa.me/919791244634';
+    if (/training|teach|trick|behavior/.test(text)) {
+        return 'Ringneck-ku very smart! Training easy. Positive reinforcement use panni. Step-up, whistle, mimicking - all possible! Fun activities daily venum! 🎓';
+    }
+
+    if (/contact|whatsapp|phone|call|book|appointment/.test(text)) {
+        return 'Sari! Contact Pattu Kadai: WhatsApp 👉 wa.me/919791244634 📞 Phone: 979-1244-634 📧 info@pattukadai.com 🍃';
+    }
+
+    return 'Entha solli therinthutu? Oru simple question vedum arivu. Innoru way: WhatsApp pannunga - 979-1244-634 🦜🍃';
 }
 
 function setupChatbot() {
