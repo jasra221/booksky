@@ -2,378 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanaa Exotics - Premium Parrot Care & Accessories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>InstaParrot - Instagram Style Parrot Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Floating Parrots Background -->
     <div class="floating-parrots"></div>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">🦜 Sanaa Exotics</div>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#types">Parrot Types</a>
-        <a href="#about">About</a>
-        <a href="#subscription">Health Plans</a>
-        <a href="#contact">Contact</a>
+    <nav class="top-nav">
+        <div class="nav-brand">?? InstaParrot</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#characteristics">Characteristics</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#health">Health Plan</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="parrot-emoji">🦜</div>
-            <h1>Welcome to Sanaa Exotics</h1>
-            <p>Your Complete Parrot Care Paradise</p>
-            <p style="font-size: 1.2rem; margin-top: 1.5rem;">Premium Cages • Nutritious Foods • Expert Accessories • Veterinary Health Plans</p>
-            <a href="#contact" class="cta-button">Get Started Today 🚀</a>
+    <div class="page-overlay" id="pageOverlay">
+        <div class="overlay-card">
+            <div class="overlay-badge">Luxury Edition</div>
+            <h1>Welcome to InstaParrot Elite</h1>
+            <p>Browse premium mobile pages for Home, Characteristics, Benefits, Health Plan and Contact.</p>
+            <div class="overlay-pages">
+                <button class="overlay-link" data-target="#home">Home</button>
+                <button class="overlay-link" data-target="#characteristics">Characteristics</button>
+                <button class="overlay-link" data-target="#benefits">Benefits</button>
+                <button class="overlay-link" data-target="#health">Health Plan</button>
+                <button class="overlay-link" data-target="#contact">Contact</button>
+            </div>
+            <button class="close-overlay" id="closeOverlay">Enter Experience</button>
         </div>
-    </section>
+    </div>
 
-    <!-- Products Section -->
-    <section class="section" id="products">
-        <h2 class="section-title">Our Premium Products</h2>
-        
-        <div class="products-grid">
-            <!-- Cages -->
-            <div class="product-card fade-in">
-                <div class="product-icon">🏠</div>
-                <div class="product-content">
+    <main>
+        <section class="page-section hero" id="home">
+            <div class="hero-card">
+                <span class="hero-label">Luxury Parrot Care</span>
+                <h1>Luxury Parrot Care Experience</h1>
+                <p>Premium parrot services with bold contrast, elegant mobile design, and refined professional layout.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="cta-button">Contact Us</a>
+                    <button class="cta-button secondary" id="openOverlayBtn" type="button">View Sections</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section section-light" id="characteristics">
+            <div class="section-header">
+                <span class="section-chip">01</span>
+                <div>
+                    <h2>Parrot Characteristics</h2>
+                    <p>Understand the most important traits of popular parrot species in a crisp, Instagram-like layout.</p>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <article class="feature-card">
+                    <h3>Macaws</h3>
+                    <p>Large, bold, social, and playful. They need space, attention, and colorful enrichment.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>African Grey</h3>
+                    <p>Extremely intelligent, chatty, and emotional. They thrive with mental puzzles and routine.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Cockatoos</h3>
+                    <p>Affectionate and demanding. They love cuddles but need strong boundaries and lots of interaction.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Parakeets</h3>
+                    <p>Small, fast, and curious. Great for mobile-friendly homes and first-time bird enthusiasts.</p>
+                </article>
+            </div>
+
+            <div class="about-block">
+                <div class="about-text">
+                    <h3>Why InstaParrot?</h3>
+                    <p>We merge beautiful Instagram-inspired design with expert parrot care information. Every page is clear, aligned, and perfect for mobile visitors.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item"><span>??</span> Better guidance for every parrot species</div>
+                    <div class="highlight-item"><span>?</span> Clean cards, bright visuals, and soft gradients</div>
+                    <div class="highlight-item"><span>??</span> Perfect mobile alignment and spacing</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section section-light" id="benefits">
+            <div class="section-header">
+                <span class="section-chip">02</span>
+                <div>
+                    <h2>Premium Benefits & Products</h2>
+                    <p>Discover premium parrot products, health benefits, and ownership advantages in one polished page.</p>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <article class="product-card">
+                    <div class="product-icon">??</div>
                     <h3>Premium Cages</h3>
-                    <p>Spacious, safe, and beautifully designed homes for your feathered friends.</p>
-                    <ul class="product-features">
-                        <li>Multiple size options</li>
-                        <li>High-quality steel construction</li>
-                        <li>Perches included</li>
-                        <li>Easy-clean trays</li>
-                        <li>Safe, non-toxic materials</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Accessories -->
-            <div class="product-card fade-in">
-                <div class="product-icon">🎨</div>
-                <div class="product-content">
+                    <p>Spacious, safe, and elegant homes for your feathered friends.</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-icon">??</div>
                     <h3>Toys & Accessories</h3>
-                    <p>Enrichment items to keep your parrot happy, stimulated, and entertained.</p>
-                    <ul class="product-features">
-                        <li>Chew toys & mirrors</li>
-                        <li>Swing & climbing accessories</li>
-                        <li>Food bowls & perches</li>
-                        <li>Cage decorations</li>
-                        <li>Training tools</li>
+                    <p>Fun, stimulating products crafted for parrots that love playtime.</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-icon">??</div>
+                    <h3>Nutrition</h3>
+                    <p>Balanced diets with fresh pellets, fruits, and species-specific formulas.</p>
+                </article>
+            </div>
+
+            <div class="pros-cons-grid">
+                <article class="pros-box">
+                    <h3>Advantages</h3>
+                    <ul>
+                        <li>Intelligent, social companions</li>
+                        <li>Long-lasting relationships</li>
+                        <li>Colorful and entertaining pets</li>
+                        <li>Wide range of species</li>
                     </ul>
-                </div>
-            </div>
-
-            <!-- Food -->
-            <div class="product-card fade-in">
-                <div class="product-icon">🥕</div>
-                <div class="product-content">
-                    <h3>Premium Nutrition</h3>
-                    <p>Specially formulated, nutrient-rich food for optimal health and vitality.</p>
-                    <ul class="product-features">
-                        <li>Balanced pellet mix</li>
-                        <li>Organic seeds & nuts</li>
-                        <li>Fresh fruit & vegetables</li>
-                        <li>Vitamin supplements</li>
-                        <li>Species-specific formulas</li>
+                </article>
+                <article class="cons-box">
+                    <h3>Challenges</h3>
+                    <ul>
+                        <li>Can be loud and demanding</li>
+                        <li>Need long-term commitment</li>
+                        <li>Require specialized care</li>
+                        <li>Produce dust and debris</li>
                     </ul>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Parrot Types Section -->
-    <section class="section parrot-types-section" id="types">
-        <h2 class="section-title">🦜 Parrot Types & Characteristics</h2>
-        
-        <div class="types-intro">
-            <p>There are over 393 species of parrots worldwide, each with unique personalities, sizes, and requirements. Understanding the different types helps you choose the perfect companion for your lifestyle. From small, playful parakeets to large, intelligent macaws, parrots offer diverse characteristics and behaviors. Some are known for their talking ability, while others are better mimics or singers. All parrots are social, intelligent, and long-lived, making them a significant commitment but a rewarding one.</p>
-        </div>
-
-        <div class="types-grid">
-            <!-- Macaws -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">🦜</div>
-                <div class="parrot-type-info">
-                    <h4>Macaws</h4>
-                    <p class="lifespan">🕐 Lifespan: 30-50+ years</p>
-                    <p><strong>Size:</strong> 24-40 inches - The largest parrots<br>
-                    <strong>Personality:</strong> Majestic, intelligent, affectionate, and social. Known for their vibrant colors and loud calls. They form strong bonds with their owners and require extensive socialization.<br>
-                    <strong>Needs:</strong> Large cages, plenty of toys, and 3-4 hours of daily interaction.</p>
+        <section class="page-section subscription-section" id="health">
+            <div class="subscription-content">
+                <span class="section-chip">03</span>
+                <h2>Monthly Health Plan</h2>
+                <p>Keep your parrot healthy with regular checkups, diet reviews, and expert vet support.</p>
+                <div class="benefits-grid">
+                    <article class="benefit-item">
+                        <h4>Vet Visits</h4>
+                        <p>Monthly wellness exams to catch issues early.</p>
+                    </article>
+                    <article class="benefit-item">
+                        <h4>Nutrition Advice</h4>
+                        <p>Personalized diet plans for every parrot species.</p>
+                    </article>
+                    <article class="benefit-item">
+                        <h4>Priority Support</h4>
+                        <p>Fast help for behavior, health, or emergencies.</p>
+                    </article>
+                    <article class="benefit-item">
+                        <h4>Digital Records</h4>
+                        <p>Track vaccines, treatments, and wellness notes online.</p>
+                    </article>
                 </div>
+                <a href="https://wa.me/919791244634?text=I%20want%20the%20monthly%20health%20plan" class="cta-button">Subscribe Now</a>
             </div>
+        </section>
 
-            <!-- African Greys -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">🧠</div>
-                <div class="parrot-type-info">
-                    <h4>African Greys</h4>
-                    <p class="lifespan">🕐 Lifespan: 40-60+ years</p>
-                    <p><strong>Size:</strong> 12-14 inches (Congo Grey is larger)<br>
-                    <strong>Personality:</strong> Exceptionally intelligent (equivalent to a 4-6 year old child), complex emotional needs, excellent talkers with large vocabularies. They can become deeply attached to one person.<br>
-                    <strong>Needs:</strong> Mental stimulation is critical. Puzzle toys, training, and consistent interaction prevent behavioral problems.</p>
-                </div>
-            </div>
-
-            <!-- Cockatoos -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">💛</div>
-                <div class="parrot-type-info">
-                    <h4>Cockatoos</h4>
-                    <p class="lifespan">🕐 Lifespan: 40-60+ years</p>
-                    <p><strong>Size:</strong> 12-24 inches (varies by species)<br>
-                    <strong>Personality:</strong> Extremely affectionate, cuddly, and social. They love physical contact and can be demanding of attention. Loud screamers, especially in early morning/evening.<br>
-                    <strong>Needs:</strong> Lots of human interaction. Without sufficient attention, they can become destructive and develop behavioral issues.</p>
+        <section class="page-section section-light contact-section" id="contact">
+            <div class="section-header">
+                <span class="section-chip">04</span>
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>Reach out quickly through WhatsApp, call, or email.</p>
                 </div>
             </div>
 
-            <!-- Amazon Parrots -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">🗣️</div>
-                <div class="parrot-type-info">
-                    <h4>Amazon Parrots</h4>
-                    <p class="lifespan">🕐 Lifespan: 40-50+ years</p>
-                    <p><strong>Size:</strong> 10-16 inches<br>
-                    <strong>Personality:</strong> Excellent talkers with clear speech, playful, intelligent, and vocal. They're known for singing and making amusing sounds. Less demanding than cockatoos but still social.<br>
-                    <strong>Needs:</strong> Good diet to prevent obesity. Daily interaction and toys for enrichment.</p>
-                </div>
+            <div class="contact-actions">
+                <a href="https://wa.me/919791244634?text=Hi%20I%20want%20more%20information" class="contact-button whatsapp-btn" target="_blank">?? WhatsApp</a>
+                <a href="tel:+919791244634" class="contact-button phone-btn">?? Call</a>
+                <a href="mailto:info@sanaaexotics.com" class="contact-button email-btn">?? Email</a>
             </div>
 
-            <!-- Parakeets -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">⚡</div>
-                <div class="parrot-type-info">
-                    <h4>Parakeets (Budgies)</h4>
-                    <p class="lifespan">🕐 Lifespan: 10-15 years</p>
-                    <p><strong>Size:</strong> 7-8 inches<br>
-                    <strong>Personality:</strong> Small but mighty! Playful, curious, active, and can learn to talk. Lower maintenance than larger birds but still need daily interaction and exercise.<br>
-                    <strong>Needs:</strong> Smaller cages than large parrots but must still be spacious. Great for beginners and first-time parrot owners.</p>
-                </div>
+            <div class="contact-details">
+                <p><strong>Email:</strong> info@sanaaexotics.com</p>
+                <p><strong>Phone:</strong> +91 97912 44634</p>
+                <p><strong>Address:</strong> Sanaa Exotics, Chennai</p>
+                <p><strong>Hours:</strong> Mon - Sun, 9:00 AM - 6:00 PM</p>
             </div>
+        </section>
+    </main>
 
-            <!-- Conures -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">🎵</div>
-                <div class="parrot-type-info">
-                    <h4>Conures</h4>
-                    <p class="lifespan">🕐 Lifespan: 20-30 years</p>
-                    <p><strong>Size:</strong> 9-13 inches<br>
-                    <strong>Personality:</strong> Playful, mischievous, energetic, and loud. They're excellent problem-solvers and can learn tricks. Great personality with a friendly disposition.<br>
-                    <strong>Needs:</strong> Lots of toys for chewing. They're known for being destructive, so sturdy toys are essential. Daily exercise and interaction needed.</p>
-                </div>
-            </div>
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">?</button>
 
-            <!-- Lovebirds -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">💕</div>
-                <div class="parrot-type-info">
-                    <h4>Lovebirds</h4>
-                    <p class="lifespan">🕐 Lifespan: 10-20 years</p>
-                    <p><strong>Size:</strong> 5-7 inches (smallest of the common parrots)<br>
-                    <strong>Personality:</strong> Affectionate, bonded pairs are devoted to each other, playful, can be territorial. Despite their small size, they have big personalities.<br>
-                    <strong>Needs:</strong> Best kept in pairs. Spacious cage with toys. Less demanding than larger parrots, good for apartments.</p>
-                </div>
-            </div>
-
-            <!-- Eclectus Parrots -->
-            <div class="parrot-type-card fade-in">
-                <div class="parrot-type-emoji">🎨</div>
-                <div class="parrot-type-info">
-                    <h4>Eclectus Parrots</h4>
-                    <p class="lifespan">🕐 Lifespan: 40-50+ years</p>
-                    <p><strong>Size:</strong> 17-20 inches<br>
-                    <strong>Personality:</strong> Stunning sexually dimorphic birds (males green, females red). Intelligent, gentle, and quieter than many parrots. Excellent talkers. Less destructive than other large parrots.<br>
-                    <strong>Needs:</strong> High-fiber diet. Males and females have different care needs. They're social but less demanding than cockatoos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pros and Cons Section -->
-    <section class="section pros-cons-section">
-        <h2 class="section-title">✅ Parrot Ownership: Pros & Cons</h2>
-        
-        <div class="pros-cons-container">
-            <div class="pros-box fade-in">
-                <h3>✅ Advantages of Parrot Ownership</h3>
-                <ul>
-                    <li>Intelligent companions that bond deeply with owners</li>
-                    <li>Can live 30-80+ years (lifelong friendship)</li>
-                    <li>Many species can talk and communicate</li>
-                    <li>Entertaining personalities and behaviors</li>
-                    <li>Physical affection and cuddling (especially cockatoos)</li>
-                    <li>Can learn tricks and commands</li>
-                    <li>Colorful and beautiful to observe</li>
-                    <li>Provide purpose and responsibility</li>
-                    <li>Great emotional support companions</li>
-                    <li>Social and engaging interactions daily</li>
-                    <li>Unique and impressive pet to own</li>
-                </ul>
-            </div>
-
-            <div class="cons-box fade-in">
-                <h3>⚠️ Challenges of Parrot Ownership</h3>
-                <ul>
-                    <li>Very loud (some species scream for hours daily)</li>
-                    <li>Long-term commitment (decades of care)</li>
-                    <li>Expensive (food, vet care, toys)</li>
-                    <li>Requires large, spacious cages</li>
-                    <li>Destructive behavior and chewing</li>
-                    <li>Can be aggressive or bite if not socialized</li>
-                    <li>Need 3-4+ hours of daily interaction</li>
-                    <li>Produce lots of dust and debris</li>
-                    <li>Difficult to travel (boarding is expensive)</li>
-                    <li>Veterinary care is specialized and costly</li>
-                    <li>Can develop behavioral problems without proper care</li>
-                    <li>Not suitable for apartments or noise-sensitive areas</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="section about-section" id="about">
-        <div class="about-content">
-            <div>
-                <div class="parrot-illustration">🦜🦗🌿</div>
-                <h2>About Sanaa Exotics</h2>
-                <p>At Sanaa Exotics, we believe that parrot ownership is a rewarding journey that requires proper education, premium products, and professional guidance. Since 2015, we've been committed to helping parrot enthusiasts create thriving, happy, and healthy communities for their feathered companions.</p>
-                <p>Our mission is to provide everything you need to become an expert parrot caretaker while supporting the conservation and wellbeing of these magnificent birds.</p>
-            </div>
-
-            <div class="parrot-education">
-                <h3 class="education-title">🎓 Parrot Education Hub</h3>
-
-                <div class="education-item">
-                    <h4>Understanding Your Parrot</h4>
-                    <p>Parrots are highly intelligent, social, and long-lived animals that can live 30-80+ years depending on species. They require mental stimulation, physical exercise, social interaction, and a proper diet. Unlike other pets, parrots need active engagement and can develop behavioral issues without proper attention.</p>
-                </div>
-
-                <div class="education-item">
-                    <h4>Species & Characteristics</h4>
-                    <p>There are over 393 parrot species, each with unique personalities and requirements. African Greys are famous for their intelligence, Macaws for their size and vibrant colors, Cockatoos for their affection, Amazons for their vocalizations, and Parakeets for their playfulness. Understanding your species helps provide optimal care.</p>
-                </div>
-
-                <div class="education-item">
-                    <h4>Nutritional Needs</h4>
-                    <p>A proper parrot diet includes quality pellets (60%), fresh vegetables (25%), fruits (10%), and occasional nuts. Avoid avocado, chocolate, salt, and caffeine which are toxic. Calcium, vitamin A, and omega-3s are essential. Fresh water must be available daily.</p>
-                </div>
-
-                <div class="education-item">
-                    <h4>Housing Requirements</h4>
-                    <p>Minimum cage size depends on species. Large parrots need cages at least 2-3 times their wingspan. The bar spacing must prevent head trapping. Cages need perches of various diameters, toys for enrichment, and easy access for cleaning. Avoid non-stick cookware and aerosol sprays.</p>
-                </div>
-
-                <div class="education-item">
-                    <h4>Health & Wellness</h4>
-                    <p>Annual vet checkups are crucial. Watch for signs of illness: ruffled feathers, discharge, behavior changes, appetite loss, or lethargy. Ensure 10-12 hours of quality sleep daily. Exercise is vital - parrots should fly or play for at least 2-4 hours daily.</p>
-                </div>
-
-                <div class="education-item">
-                    <h4>Training & Socialization</h4>
-                    <p>Parrots are trainable and enjoy learning tricks and commands. Positive reinforcement works best. Socialization with multiple people during their youth creates well-adjusted birds. Teaching your parrot to step up, come on command, and play games strengthens your bond.</p>
-                </div>
-
-                <div class="education-item">
-                    <h4>Lifespan & Commitment</h4>
-                    <p>Parrot ownership is a long-term commitment that can span your lifetime. Small parrots live 20-30 years, while larger species can live 50+ years. Plan for your bird's future, including veterinary care costs and potential rehoming needs.</p>
-                </div>
-
-                <div class="education-item">
-                    <h4>Behavior & Communication</h4>
-                    <p>Parrots communicate through body language, vocalizations, and behavior. Head bobbing shows excitement, feather fluffing indicates comfort or illness, and screaming can mean boredom or distress. Understanding these signals helps you respond to your bird's needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Subscription Section -->
-    <section class="subscription-section" id="subscription">
-        <div class="subscription-content">
-            <h2>🏥 Monthly Health Checkup Subscription</h2>
-            <p>Professional veterinary care for your beloved parrot with our exclusive monthly health subscription plan.</p>
-            
-            <div class="benefits">
-                <div class="benefit-item">
-                    <h4>Monthly Visits</h4>
-                    <p>Trained avian veterinarians visit monthly to ensure optimal health and catch issues early.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <h4>Preventive Care</h4>
-                    <p>Comprehensive health screenings, beak trimming, nail care, and dietary assessments included.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <h4>Expert Guidance</h4>
-                    <p>Get professional advice on nutrition, behavior, housing, and general parrot wellness.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <h4>Emergency Support</h4>
-                    <p>Priority access to emergency veterinary care 24/7 for subscription members.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <h4>Personalized Plans</h4>
-                    <p>Custom health protocols based on your parrot's species, age, and individual needs.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <h4>Health Records</h4>
-                    <p>Detailed digital health records and vaccination tracking for peace of mind.</p>
-                </div>
-            </div>
-
-            <p style="margin-top: 2rem; font-size: 1.3rem; font-weight: bold;">Starting at just $100/month per bird</p>
-            <a href="https://wa.me/919791244634?text=I%20want%20to%20subscribe%20to%20monthly%20health%20checkups!" class="cta-button" style="margin-top: 1.5rem;">Subscribe Now</a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact-section" id="contact">
-        <h2>Get In Touch With Us</h2>
-        <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Have questions? Ready to start your parrot journey? We're here to help!</p>
-        
-        <div class="contact-buttons">
-            <a href="https://wa.me/919791244634?text=Hi%20Sanaa%20Exotics!%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20services." class="whatsapp-btn" target="_blank">
-                <span>💬</span>
-                <span>WhatsApp Us</span>
-            </a>
-            <a href="tel:+919791244634" class="phone-btn">
-                <span>📞</span>
-                <span>Call Us</span>
-            </a>
-            <a href="mailto:info@sanaaexotics.com" class="email-btn">
-                <span>📧</span>
-                <span>Email Us</span>
-            </a>
-        </div>
-
-        <div style="margin-top: 3rem; color: #666; font-size: 0.95rem;">
-            <p><strong>Email:</strong> info@sanaaexotics.com</p>
-            <p><strong>Phone:</strong> +1 (234) 567-890</p>
-            <p><strong>Address:</strong> Sanaa Exotics, Premium Parrot Care Center, Your City, Country</p>
-            <p><strong>Hours:</strong> Monday - Sunday, 9:00 AM - 6:00 PM</p>
-        </div>
-    </section>
-
-    <!-- Chatbot Widget -->
     <div class="chatbot-widget" id="chatbotWidget">
         <button class="chatbot-toggle" id="chatbotToggle">Chat</button>
         <div class="chatbot-window" id="chatbotWindow">
             <div class="chat-header">
                 <div>
-                    <strong>Sanaa Chat</strong>
-                    <p>Ask in Thanglish</p>
+                    <strong>InstaParrot Bot</strong>
+                    <p>Quick emoji replies</p>
                 </div>
-                <button class="chat-close" id="chatbotClose">✕</button>
+                <button class="chat-close" id="chatbotClose">?</button>
             </div>
             <div class="chat-messages" id="chatMessages">
-                <div class="chat-message bot-message">Vanakkam! Enna venum? (hi, salam, price, location)</div>
+                <div class="chat-message bot-message">Hey! ?? Ask me about price, location, diet, health plan, or contact.</div>
             </div>
             <div class="chat-input-row">
                 <input type="text" id="chatInput" placeholder="Type your question..." />
@@ -383,11 +216,9 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Sanaa Exotics. All rights reserved.</p>
-        <p>Dedicated to the health, happiness, and wellbeing of your feathered friends.</p>
-        <p style="margin-top: 1rem; opacity: 0.8;">🦜 Bringing joy and expertise to parrot lovers worldwide 🦜</p>
+        <p>&copy; 2026 InstaParrot. All rights reserved.</p>
+        <p>Clean, colorful, and mobile-ready parrot care for modern visitors.</p>
     </footer>
 
     <script src="script.js"></script>
